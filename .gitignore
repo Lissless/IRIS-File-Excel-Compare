@@ -1,3 +1,6 @@
 env/*
 !env/compare.py
 Test-Excel-Names.xlsx
+Phase 1
+Phase 1-zip.zip
+.DS_Store
