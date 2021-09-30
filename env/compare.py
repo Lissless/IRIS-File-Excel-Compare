@@ -15,7 +15,7 @@ def getExcelNames():
     return names
 
 def getFolderNames():
-    rawFileNames = listdir("Phase 1")
+    rawFileNames = listdir("Phase 1 Data")
     return rawFileNames
 
 def deleteRepeats(fileNames):
@@ -28,7 +28,7 @@ def deleteRepeats(fileNames):
             count.append(name)
             print(name)
         else:
-            original.append(name)
+            original.append(name[0: len(name) - 4])
     print("duplicate amount: " + str(len(count)))
     return original
 
